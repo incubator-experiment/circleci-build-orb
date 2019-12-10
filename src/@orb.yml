@@ -1,0 +1,8 @@
+version: 2.1
+
+description: |
+  A simple "Hello, World!" orb
+executors:
+  default:
+    docker:
+      - image:  bash:4.4.19
