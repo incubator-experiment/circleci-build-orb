@@ -14,7 +14,7 @@ workflows:
           artifact-path: packed/orb.yml
 
       - orb-tools/publish:
-          orb-path: ./packed/orb.yml
+          orb-path: project/workspace/packed/orb.yml
           orb-ref: "incubator/circleci-build-orb@dev:first"
           publish-token-variable: "CIRCLECI_API_TOKEN"
           attach-workspace: true
