@@ -1,24 +1,9 @@
 version: 2.1
-description: # The purpose of this orb
+description: To welcome the project
 
-orbs:
-  my-orb:
-    orbs:
-      codecov: circleci/codecov-clojure@0.0.4
-    executors:
-      specialthingsexecutor:
-        docker:
-          - image: circleci/node:4.8.2
-    commands:
-      dospecialthings:
-        steps:
-          - run: echo "We will now do special things"
-    jobs:
-      myjob:
-        executor: specialthingsexecutor
-        steps:
-          - dospecialthings
-workflows:
-  main:
-    jobs:
-      - my-orb/myjob
+commands:
+  myjob:
+    steps:
+    - run:
+        command: echo "Hello Incubator"
+
